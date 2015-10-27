@@ -25,5 +25,7 @@
  * @since Accelerate Marketing 1.0
  */
 
-register_nav_menu('top-nav', 'Top Nav');
-register_nav_menu('social-media', 'Social Media Nav');
+register_nav_menus( array(
+		'primary' => __( 'Top Nav', 'accelerate' ),
+		'social' => __( 'Social Media Nav', 'accelerate' )
+) );
